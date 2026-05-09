@@ -1,0 +1,39 @@
+﻿@page
+@model CreateModel
+@{
+    ViewData["Title"] = "Add Workout";
+}
+
+
+
+
+
+<div class="text-center">
+    <h1>Add Workout</h1>
+
+    <form method="post">
+
+        <div class="mb-3">
+            <input name="workoutname" class="form-control" placeholder="Workout Name" />
+        </div>
+
+        <div class="mb-3">
+            <input name="duration" class="form-control" placeholder="Duration" />
+        </div>
+
+        <div class="mb-3">
+            <input name="calories" class="form-control" placeholder="Calories" />
+        </div>
+
+        <div class="mb-3">
+            <input name="workoutdate" type="date" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save Workout</button>
+
+
+    </form>
+
+
+
+</div>

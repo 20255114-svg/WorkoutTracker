@@ -1,0 +1,27 @@
+﻿@page
+@model WorkoutTracker.Pages.WorkoutsModel
+@{
+    ViewData["Title"] = "Workouts";
+}
+
+<h2>Simple Workout Tracker</h2>
+
+<form method="post">
+    <div>
+        <label>Workout Name:</label>
+        <input asp-for="WorkoutName" />
+    </div>
+    <div>
+        <label>Duration (minutes):</label>
+        <input asp-for="Duration" type="number" />
+    </div>
+    <button type="submit">Add Workout</button>
+</form>
+
+<h3>Workout Log</h3>
+<ul>
+    @foreach (var workout in WorkoutTracker.Pages.WorkoutsModel.Workouts)
+    {
+        <li>@workout</li>
+    }
+</ul>

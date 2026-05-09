@@ -1,0 +1,11 @@
+﻿@page
+@model WorkoutTracker.Pages.UsersModel
+
+<h1>Registered Users</h1>
+
+<ul>
+    @foreach (var u in Model.users)
+    {
+        <li>@u</li>
+    }
+</ul>

@@ -1,0 +1,13 @@
+﻿@page
+@model WorkoutTracker.Pages.RecordLogModel
+@{
+    ViewData["Title"] = "Record Log";
+}
+
+<h2>Registered Users</h2>
+<ul>
+    @foreach (var user in Model.Users)
+    {
+        <li>@user</li>
+    }
+</ul>
